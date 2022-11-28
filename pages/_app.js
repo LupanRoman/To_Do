@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import React from 'react';
 import App from 'next/app';
+import { ContextProvider } from '../context/StateContext';
 
 class MyApp extends App {
   render() {
@@ -8,9 +9,11 @@ class MyApp extends App {
     const Layout = Component.Layout || DefaultLayout;
 
     return (
+      <ContextProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      </ContextProvider>
     );
   }
 }
