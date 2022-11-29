@@ -20,7 +20,6 @@ const index = () => {
 
   return (
     <>
-      {/* Here I display the log in page that redirects me to the /drawer/Landing */}
       <div className="h-screen">
         <header className="w-full h-14 bg-bg-color absolute flex justify-center items-center">
           <h5 className="text-xl font-black ">To Do List</h5>

@@ -8,18 +8,6 @@
     font-family: 'Montserrat';
 }
 
-/* @media screen and(max-width: 1000px) {
-    .desktop {
-        display: hidden;
-    }
-}
-
-@media screen and(min-width: 800px) {
-    .mobile {
-        display: hidden;
-    }
-} */
-
 .layout {
     height: 100vh;
     display: grid;

@@ -10,9 +10,9 @@ class MyApp extends App {
 
     return (
       <ContextProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ContextProvider>
     );
   }

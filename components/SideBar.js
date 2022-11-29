@@ -5,7 +5,7 @@ import AddDrawer from './AddDrawer';
 import Drawer from './Drawer';
 
 const SideBar = () => {
-  const { DrawersArr } = useContext(StateContext);
+  const { DrawerArr } = useContext(StateContext);
   const [drawerModal, setDrawerModal] = useState(false);
   return (
     <>
@@ -13,7 +13,7 @@ const SideBar = () => {
         <h4 className="h-20 flex items-center p-10 text-xl font-bold">To Do</h4>
         <div className="flex h-full flex-col justify-between">
           <div>
-            {DrawersArr?.map((item) => (
+            {DrawerArr?.map((item) => (
               <Drawer key={item.id} item={item} />
             ))}
           </div>

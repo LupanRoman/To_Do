@@ -3,7 +3,7 @@ import { GrClose } from 'react-icons/gr';
 import StateContext from '../context/StateContext';
 
 const AddDrawer = ({ closeDrawer }) => {
-  const { getData } = useContext(StateContext);
+  const { addDrawer } = useContext(StateContext);
 
   return (
     <>
@@ -17,11 +17,11 @@ const AddDrawer = ({ closeDrawer }) => {
         <label htmlFor="drawer">Title</label>
         <input
           type="text"
-          id="drawer"
+          id="userInput"
           name="title"
           placeholder="Enter title here"
         />
-        <button onClick={getData}>Add</button>
+        <button onClick={addDrawer} >Add</button>
       </div>
     </>
   );
